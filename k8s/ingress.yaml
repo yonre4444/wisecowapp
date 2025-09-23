@@ -3,10 +3,16 @@ kind: Ingress
 metadata:
   name: wisecow-ingress
   annotations:
-    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - wisecow.<external-ip>.nip.io
+      - wisecow.a1b2c3d4-xxxx.elb.amazonaws.com.nip.io
+    secretName: wisecow-tls
   rules:
-  - host: wisecow.local
+  - host: wisecow.a1b2c3d4-xxxx.elb.amazonaws.com.nip.io
     http:
       paths:
       - path: /

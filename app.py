@@ -4,10 +4,7 @@ import random
 app = Flask(__name__)
 
 quotes = [
-    "Moo! Cows are amazing 🐄",
-    "Wisdom comes slowly, like milk from a cow 🥛",
-    "Keep calm and love cows ❤️",
-    "Life is better with cows around 🌿"
+    "wisecowapp devops traaine",
 ]
 
 @app.route("/")
