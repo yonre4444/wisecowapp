@@ -12,7 +12,7 @@ The application is exposed via the domain **https://culmarket.store** with TLS f
 - Kubernetes manifests include Deployment, Service, and Ingress with TLS.
 - TLS certificate configured for the domain `culmarket.store`.
 
-### PS2: Scripts bash
+### PS2: Scripts bash and python
 - **System Health Monitoring Script**: Monitors CPU, memory, disk, and running processes. Alerts if thresholds exceeded.
 - **Application Health Checker**: Checks uptime and HTTP status codes of the application.
 
